@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shoe page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightgray;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::after{
+            content: "";
+            position: absolute;
+            inset: 0;
+            transform: skewY(10deg);
+            background: linear-gradient(to right, #b92b27, #1565c0);
+            z-index: -1;
+            box-shadow: 0px 0px 10px black ;
+        }
+        .shoe-box{
+            width: 80%;
+            height: 75%;
+            margin: auto;
+            margin-top: 7%;
+            padding: 5px;
+            box-shadow: 0px 0px 10px black;
+            
+        }
+        .shoe-box .shoe-txt{
+            max-width: 40%;
+            color: white;
+        }
+        .shoe-box .shoe-txt h1{
+            font-size: xx-large;
+            margin-bottom: 30px;
+        }
+        .shoe-box .shoe-txt p{
+            font-size: large;
+            margin-bottom: 50px;
+            line-height: 20px;
+        }
+        .shoe-box .shoe-img{
+            position: absolute;
+            right: 0px;
+            top: 10%;
+            width: 600px;
+            height: 300px;
+        }
+        .shoe-img:hover{
+            top: 15px;
+            width: 900px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shoe-box" style=" background: linear-gradient(to right, #8a2387, #e94057, #f27121);">
+            <div class="shoe-txt">
+                <h1>Shoe-1</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at, blanditiis saepe adipisci molestiae neque quisquam perferendis, repudiandae repellendus odio a repellat minus iste sapiente molestias nulla nam, quas perspiciatis!</p>
+                <br>
+                <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolore.</p>
+            </div>
+            <img class="shoe-img"src="shoe-1.png" alt="shoe">
+        </div>
+    </div>
+</body>
+</html>
